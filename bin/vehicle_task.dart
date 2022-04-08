@@ -1,20 +1,20 @@
-abstract class Menufacturer{
-      void vehiclebreak(){
+abstract class Vehicle{
+      void menufacturer(){
         print("-------same thing in car and bike------");
         print("Disc Break are same In Both Vehicles ");
       }
 }
-class TwoVehicle extends Menufacturer {
+class TwoVehicle extends Vehicle {
     @override 
-    void vehiclebreak();
+    void menufacturer();
     void information(){
       print("------TWO WHEELER------");
       print("KEEP YOUR HANDS STRESS FREE WHILE RIDING YOUR TWO WHEELER");
     }
-}
-class FourVehicle extends Menufacturer{
+} 
+class FourVehicle extends Vehicle{
   @override
-    void vehiclebreak();
+    void menufacturer();
     void steering(){
       print("------FOUR WHEELER------");
       print("ELECTRIC POWER STEERING PROVIDES BETTER FUEL ECONOMY");
@@ -23,8 +23,7 @@ class FourVehicle extends Menufacturer{
 void main(){
     TwoVehicle t =  TwoVehicle();
     FourVehicle f = FourVehicle();
-    t.vehiclebreak();
+    t.menufacturer();
     t.information();
-    
     f.steering();
 }
