@@ -1,5 +1,6 @@
 abstract class Menufacturer{
       void vehiclebreak(){
+        print("-------same thing in car and bike------");
         print("Disc Break are same In Both Vehicles ");
       }
 }
